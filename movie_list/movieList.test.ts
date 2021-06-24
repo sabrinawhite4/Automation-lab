@@ -5,7 +5,7 @@ const chromedriver = require("chromedriver");
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build();
 
 beforeAll(async () => {
-  await driver.get("http://localhost:5500/index.html");
+  await driver.get("http://localhost:5500/movie_list/index.html");
 });
 
 afterAll(async () => {
